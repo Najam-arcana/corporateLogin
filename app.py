@@ -84,7 +84,7 @@ def corporate_login():
         payload = f"{msisdn}~{timestamp}"
         x_hash_value = Encryption.encrypt(payload, public_key)
 
-        return jsonify({"LoginPayload": login_payload, "Timestamp": timestamp, "X-Hash-Value": x_hash_value, "check": "wworked from yml"}), 200
+        return jsonify({"LoginPayload": login_payload, "Timestamp": timestamp, "X-Hash-Value": x_hash_value, "check": "wwworked from yml"}), 200
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
