@@ -72,5 +72,5 @@ jobs:
             docker stop flaskenc || true
             docker rm flaskenc || true
             docker pull ${{ secrets.DOCKER_HUB_USERNAME }}/flaskenc:latest
-            docker run -d --name flaskenc -p 5000:5000 ${{ secrets.DOCKER_HUB_USERNAME }}/flaskenc:latest
+            docker run -d --name flaskenc -p 5001:5001 ${{ secrets.DOCKER_HUB_USERNAME }}/flaskenc:latest
 
